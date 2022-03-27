@@ -1,0 +1,17 @@
+<html>
+    <head>Diabetes Prediction</head>
+    
+    <form action="{{url_for('predict')}}"method="post">
+        <input type="text" name="Pregnancies" placeholder="Pregnancies" required="required"/>
+        <input type="text" name="glucose" placeholder="glucose" required="required"/>
+         <input type="text" name="BloodPressure" placeholder="BloodPressure" required="required"/>
+         <input type="text" name="Skinthickness" placeholder="Skinthickness" required="required"/>
+         <input type="text" name="Insulin" placeholder="Insulin" required="required"/>
+         <input type="text" name="BMI" placeholder="BMI" required="required"/>
+         <input type="text" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required"/>
+         <input type="text" name="Age" placeholder="Age" required="required"/>
+        
+        <button type="submit" class="btn">Predict</button>
+    </form>
+   {{prediction_text}}
+</html>
